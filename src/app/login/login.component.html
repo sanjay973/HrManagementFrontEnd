@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="">
+  <meta name="viewport" content="width=, initial-scale=">
+  <title></title>
+</head>
+<body>
+  <div class="l-form">
+    <form action="" class="form">
+      <div class="alert alert-danger" *ngIf="response">{{response}}</div>
+      <h1 class="form_title">Sign In</h1>
+      <div class="form_div">
+        <input type="text" name="email" class="form_input" [(ngModel)]="user.email" placeholder=" ">
+        <label for="" class="form_label">Email</label>
+      </div>
+
+      <div class="form_div">
+        <input name="password" [(ngModel)]="user.password" type="password" class="form_input" placeholder=" ">
+        <label for="" class="form_label">Password</label>
+      </div>
+      <input type="submit" class="form_button" (click)="login(user)" >
+    </form>
+  </div>
+  <div class="">
+    <a routerLink="/register">register user</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <app-header></app-header>
+    <div class="card" style="width: 35rem;">
+        <div class="card-header">
+            New Leave Request
+        </div>
+        <div class="card-body">
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Type</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option selected value="">--SELECT TYPE--</option>
+                        <option value="1">Casual/Sick Leave (CL/SL)</option>
+                        <option value="2">Privileged Leave (PL)</option>
+                        <option value="3">Leave Without Pay</option>
+                        <option value="4">Maternity Leave (ML)</option>
+                        <option value="5">Wedding Leave (WL)</option>
+                        <option value="6">Medical Leave(MdL)</option>
+                        <option value="7">Paternity leave (PL)</option>
+                        <option value="8">Restricted Leave(RL)</option>
+                        <option value="9">Bereavement Leave (BL)</option>
+                        <option value="10">Optional Leave (OL)</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="exampleFormControlInput1">No. of days</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Date</label>
+                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                        minDate="2021-01-22">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputCity">Effe</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.card{
+    position: relative;
+    top: 20px;
+    margin: auto;
+}
+
+.card-header{
+    background-color:#634142;
+    color: white;
+    text-align: center;
+}

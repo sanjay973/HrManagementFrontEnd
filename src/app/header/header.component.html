@@ -1,0 +1,26 @@
+    <nav class="navbar" style="z-index: 12098;">
+        <div class="logo"><h1>Attendace</h1></div>
+        <div class="push-left">
+          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+          </button>
+      
+          <!--  Menu compatible with wp_nav_menu  -->
+          <ul id="primary-menu" class="menu nav-menu">
+            <li class="menu-item dropdown" [hidden]="!admin"><a class="nav__link" >Admin</a>
+              <ul class = "sub-nav">
+                <li><a class="sub-nav__link"  routerLink="/register">Register New Employee</a></li>
+                <li><a class="sub-nav__link"  routerLink="/records">View All Employee</a></li>
+              </ul>
+            </li>
+            <li class="menu-item current-menu-item"><a class="nav__link" routerLink="/attendance">Home</a></li>
+            <li class="menu-item "><button class="btn btn-warning" (click)="logout()">Logout</button>
+             
+            </li>
+          </ul>
+      
+      
+        </div>
+      </nav>

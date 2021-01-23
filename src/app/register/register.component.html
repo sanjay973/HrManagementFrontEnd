@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="card" style="width: 25rem;margin: auto;">
+        <h3 class="card-title text-center text-muted" style="font-family: monospace;">Registeration Form</h3>
+        <div class="card-body">
+            <form [formGroup]="userDetails">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input [(ngModel)]="userData.fullName" class="form-control" type="text" name="fullName" id="fullName" formControlName="fullName">
+                </div>
+
+                <!-- <div *ngIf="fullName.invalid"></div> -->
+                <div class="form-group">
+                    <label for="email" class="control-label">Email:</label>
+                    <input [(ngModel)]="userData.email" class="form-control control-label" (keydown.space)="$event.preventDefault();" type="email" name="email" id="email" formControlName="email">
+                </div> 
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <input [(ngModel)]="userData.role" class="form-control" type="text" name="password" id="role" formControlName="role">
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">Phone Number:</label>
+                    <input [(ngModel)]="userData.phone_number" class="form-control" type="text" name="phone_number" id="role" formControlName="phone_number">
+                </div>
+                <button class="btn btn-primary" [disabled]="userDetails.invalid||error" (click)="postData(userData)">Submit Details</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

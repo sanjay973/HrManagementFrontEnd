@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendace Record</title>
+</head>
+
+<body>
+  <app-header></app-header>
+  <div class="container">
+    <div class="card" style="width: 50rem;">
+      <h1 class="text-center card-header bg-success">Your Attendace Records</h1>
+      <div class="card-body">
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Check In</th>
+              <th scope="col">Check Out</th>
+              <th scope="col">Hours Present</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let data of loginTime;let i=index">
+            <tr>
+              <td><tr>{{days[i]}}</tr></td>
+              <td><tr>{{data}}</tr></td>
+              <td><tr *ngIf="logOutTime[i]!=='5:30 am' ">{{logOutTime[i]}}</tr></td>
+            </tr>
+            
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
